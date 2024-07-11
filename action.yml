@@ -1,0 +1,15 @@
+name: 'delete-branch'
+description: 'Delete a branch in a GitHub repository'
+author: 'David Hörnmark'
+
+inputs:
+  branch:
+    description: 'Exact branch name to remove'
+    required: true
+  token:
+    description: 'Personal access token for the GitHub API'
+    required: true
+
+runs:
+  using: node20
+  main: dist/index.js
